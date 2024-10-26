@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+<!-- Swiper.js Script -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<style>
+  /* Ensuring the swiper height */
+  .swiper {
+    height: 500px;
+    background-color: darkgray;
+  }
+  .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .swiper-slide img{
+    padding: 5px;
+    width: 1380px;
+    border-radius: 20px;
+  }
+</style>
+
+
+
+</head>
+<body>
+    <!-- Top Bar -->
+  <div class="bg-gray-600 text-white text-sm py-2 px-4 h-12 ">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between">
+      <!-- Left Content -->
+      <div class="flex items-center space-x-4 pt-1.5">
+        <span class="hidden sm:inline">Free shipping on orders over $50!</span>
+        <a href="#" class="hover:text-gray-300">Help Center</a>
+      </div>
+
+      <!-- Right Content -->
+      <div class="flex items-center space-x-4 pt-1.5">
+        <a href="#" class="hover:text-gray-300">Login</a>
+        <a href="#" class="hover:text-gray-300">Register</a>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-2">
+          <a href="#" class="hover:text-gray-300">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.27 4.27 0 0 0 1.88-2.35 8.59 8.59 0 0 1-2.73 1.04 4.27 4.27 0 0 0-7.36 2.92c0 .33.03.65.1.96A12.1 12.1 0 0 1 3.6 4.92a4.27 4.27 0 0 0 1.33 5.7c-.65-.02-1.25-.2-1.78-.5v.05c0 2.08 1.48 3.82 3.45 4.21a4.22 4.22 0 0 1-1.13.15c-.28 0-.55-.03-.81-.07a4.27 4.27 0 0 0 4 2.96A8.59 8.59 0 0 1 2 19.29 12.12 12.12 0 0 0 6.61 21c7.89 0 12.21-6.53 12.21-12.2v-.56A8.53 8.53 0 0 0 22.46 6z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-300">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-9.96 4.45-9.96 9.96 0 4.41 3.61 8.07 8.32 8.76v-6.18h-2.5v-2.58h2.5v-1.97c0-2.46 1.5-3.8 3.68-3.8 1.05 0 1.96.08 2.22.11v2.58h-1.52c-1.19 0-1.42.57-1.42 1.4v1.83h2.84l-.37 2.58h-2.47v6.18c4.71-.69 8.32-4.35 8.32-8.76 0-5.5-4.46-9.96-9.96-9.96z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Logo and Search Bar Section -->
+   <div class="bg-white py-6 px-4">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="/images/logo.jpg" alt="Logo" class="w-20 h-20">
+        <span class="text-2xl font-bold text-gray-800">BrandName</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="relative w-full max-w-lg">
+        
+        <input 
+          type="text" 
+          placeholder="Search products..." 
+          class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"          
+        />
+        <button class="absolute right-1 top-1/2 transform -translate-y-1/2 search-button bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none">Search</button>
+        
+      </div>
+      
+
+</div>
+  </div>
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+          </button>
+  
+          <!-- Profile dropdown -->
+          <div class="relative ml-3">
+            <div>
+              <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              </button>
+            </div>
+  
+            <!--
+              Dropdown menu, show/hide based on menu state.
+  
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+            <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+              <!-- Active: "bg-gray-100", Not Active: "" -->
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+      </div>
+    </div>
+  </nav>  
+  
+      <!-- More Link -->
+      <div class="text-right mt-6">
+        <a href="#" class="text-green-600 hover:underline font-medium">More Products →</a>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+</body>
+</html>
