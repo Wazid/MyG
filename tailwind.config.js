@@ -4,6 +4,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: ['@tailwindcss/aspect-ratio:auto'],
 }
 

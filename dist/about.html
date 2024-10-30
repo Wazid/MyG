@@ -35,16 +35,16 @@
 </head>
 <body>
     <!-- Top Bar -->
-  <div class="bg-gray-600 text-white text-sm py-2 px-4 h-12 ">
+  <div class="bg-gray-600 text-white text-sm py-2 px-4 h-11 ">
     <div class="max-w-screen-xl mx-auto flex items-center justify-between">
       <!-- Left Content -->
-      <div class="flex items-center space-x-4 pt-1.5">
+      <div class="flex items-center space-x-4 pt-1">
         <span class="hidden sm:inline">Free shipping on orders over $50!</span>
         <a href="#" class="hover:text-gray-300">Help Center</a>
       </div>
 
       <!-- Right Content -->
-      <div class="flex items-center space-x-4 pt-1.5">
+      <div class="flex items-center space-x-4 pt-1">
         <a href="#" class="hover:text-gray-300">Login</a>
         <a href="#" class="hover:text-gray-300">Register</a>
 
@@ -71,7 +71,7 @@
       <!-- Logo -->
       <a href="#" class="flex items-center space-x-2">
         <img src="/images/logo.jpg" alt="Logo" class="w-20 h-20">
-        <span class="text-2xl font-bold text-gray-800">BrandName</span>
+        <span class="text-2xl font-bold text-gray-800">MyG technology</span>
       </a>
 
       <!-- Search Bar -->
@@ -122,10 +122,12 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+              <a href="/dist/index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+              <a href="/dist/services.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+              <a href="/dist/brandswe_deal.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Brands</a>
+              <a href="/dist/projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+              <a href="/dist/about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Us</a>
+              <a href="/dist/contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
             </div>
           </div>
         </div>
@@ -179,17 +181,99 @@
         <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
       </div>
     </div>
-  </nav>  
+  </nav>
   
-      <!-- More Link -->
-      <div class="text-right mt-6">
-        <a href="#" class="text-green-600 hover:underline font-medium">More Products →</a>
+
+  <!-- About Us Hero Section -->
+  <section class="bg-gray-700 text-gray-950 py-20 mt-8 md:mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold">About Us</h1>
+      <p class="mt-4 text-lg">Learn more about our story, our vision, and the team that makes everything happen.</p>
+    </div>
+    <div class="absolute inset-0 opacity-20 bg-[url('https://via.placeholder.com/1500')] bg-cover bg-center"></div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Our Story</h2>
+        <p class="text-gray-600 mb-6">
+          CCTV FRIEND was founded with a vision to provide high-quality surveillance solutions for businesses and homes.
+          Our journey started with a small team of passionate engineers, and today, we are proud to serve customers
+          across the globe with the latest in security technology.
+        </p>
+        <p class="text-gray-600">
+          From analog systems to smart IP-based solutions, we have evolved with the industry to bring the best to our
+          clients. We are committed to providing the highest level of service, ensuring peace of mind with every product.
+        </p>
+      </div>
+      <img src="/images/image3.jpg" alt="Our Story" class="w-full rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section class="bg-green-100 py-16 mt-8 md:mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Mission & Vision</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto mb-8">
+        Our mission is to empower businesses and homeowners with reliable and advanced surveillance solutions. We envision
+        a world where technology plays a critical role in securing what matters most, giving people peace of mind.
+      </p>
+      <div class="flex justify-center space-x-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-green-600">Our Mission</h3>
+          <p class="mt-4 text-gray-600">To deliver innovative and accessible security products for everyone.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-green-600">Our Vision</h3>
+          <p class="mt-4 text-gray-600">To be the most trusted name in surveillance technology worldwide.</p>
+        </div>
       </div>
     </div>
   </section>
-  
 
+  <!-- Meet the Team Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 mt-8 md:mt-12">
+    <h2 class="text-3xl font-bold text-center mb-12">Meet the Team</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <img src="/images/user1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-semibold">John Doe</h3>
+        <p class="text-sm text-gray-600">CEO & Founder</p>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <img src="/images/user1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-semibold">Jane Smith</h3>
+        <p class="text-sm text-gray-600">Head of Operations</p>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <img src="/images/user1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-semibold">Michael Johnson</h3>
+        <p class="text-sm text-gray-600">Lead Engineer</p>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <img src="/images/user1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4">
+        <h3 class="text-xl font-semibold">Emily Brown</h3>
+        <p class="text-sm text-gray-600">Marketing Manager</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact Us Section -->
+  <section class="bg-green-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+      <p class="mb-8">We would love to hear from you! Feel free to contact us with any questions or inquiries.</p>
+      <a href="contact.html" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold">Contact Us</a>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p>&copy; 2024 CCTV FRIEND. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
